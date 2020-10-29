@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ 
+
+    <script src="https://kit.fontawesome.com/bb1108586f.js" crossorigin="anonymous"></script>
+
+    <title>About US</title>
+
+    <style>
+        .bs-example{
+          width:100%;
+          padding:0;
+    }
+    .fontsize{
+    font-size: 3rem;
+}  
+.container{
+background-color:rgb(216, 154, 190) ;
+padding:0;
+}
+.nav-item{
+  font-size: 24px;
+  
+}
+.navbar-brand{
+  font-size:48px;
+  
+}
+.navbar-brand a, .navbar-brand a:visited {
+  color: blue;
+}
+.footerlinks{
+  margin:5%;
+  color: white;
+}
+.card-footer{
+  background-color: white;
+}
+@media(max-width: 1024px) {
+  .footerlinks{
+    font-size: 10px;
+  }
+}
+.bs{
+  width:100%;
+  margin:0;
+}
+.navbar{
+  width:100%;
+  margin:0;
+}
+.cart{
+  margin-right: 0px;
+ 
+}
+.name{
+    color: rgb(0, 89, 223);
+    font: italic  bold 30px Comic Sans MS , serif;
+}
+
+.nameHeader{
+        display: flex;
+        margin: 20px;
+        font: italic small-caps bold 20px/30px Georgia, serif;
+        color: rgb(14, 36, 68);
+}
+.photos{
+
+  margin: 30px;
+  border-bottom:double;
+}
+
+.bigPic img {
+  width:215px;
+  height:180px;
+  display: block;
+  box-shadow: 4px 7px 5px;
+  margin: 30px 15px;
+
+}
+.btnAddToCart{
+  margin: 20px;
+  
+  font: italic small-caps bold 20px/30px Georgia, serif;
+}
+.namePrice{
+    display: flex;
+    flex-direction: row;
+    font: italic  bold 30px Comic Sans MS , serif;
+}
+.left{
+    display:inline-block;
+    width: 50%;
+    color:blue ;
+
+    margin: 20px 20px ;
+}
+.right{
+    display:inline-block;
+    width: 30%;
+    color:green;
+    margin: 20px 10px ;
+
+}
+.telephon{
+   font-size: 15px;
+   color: white;
+   
+   
+}
+.d-flex{
+  margin-top: 20px;
+}
+.businesstext{
+    
+    text-align: left;
+    padding-left: 35px ;
+    color: blue;
+    font-weight: bold;
+    border-radius: 80%;
+    border: 2px solid grey;
+    background-color: rgb(130, 208, 228);
+    margin-left: 30px;
+    font:  bold 15px Comic Sans MS , serif;
+    
+ 
+ 
+}
+.textRight{
+    
+    text-align: left;
+    color:rgb(90, 55, 82);
+    font-weight: bold;
+  
+    padding: 20px 100px 0 0;
+    
+    font:  bold 18px fantastic Sans MS , serif;
+    
+}
+.ptext{
+    margin: 20px 20px ;
+    border: 2px solid grey;
+    background-color: rgb(99, 197, 179);
+    border-radius: 5px;
+    text-align: left;
+    padding: 20px 20px;
+    font: italic   15px Comic Sans MS , serif;
+}
+.textcolor{
+    color: black;
+    font:    20px Comic Sans MS , serif;
+    font-weight: bold;
+}
+
+a.listbuttonsA{
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+    width: auto;  
+    padding:5px 10px 5px 10px;
+    background-color: rgb(226, 146, 219);
+    font: 14px cursive, sans-serif;
+    border-radius: 25px;
+    font-style: oblique;
+    
+}
+a.listbuttonsB{
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+    width: auto;  
+    padding:5px 10px 5px 10px;
+    font: 18px cursive, sans-serif;
+    font-style: oblique;
+    display:flex;
+    background-image:url(Flowers/1.png) ;
+    width:190px;
+    height: 185px;
+    box-shadow: 4px 7px 5px;
+    padding: -2px;
+  
+    
+    
+}
+a.listbuttonsC{
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+    width: auto;  
+    padding:5px 10px 5px 10px;
+    font: 18px cursive, sans-serif;
+    font-style: oblique;
+    display:flex;
+    background-image:url(Flowers/2.png) ;
+    width:195px;
+    height: 185px;
+    box-shadow: 4px 7px 5px;
+    padding: -2px;
+    
+    
+}
+a.listbuttonsD{
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+    width: auto;  
+    padding:5px 10px 5px 10px;
+    font: 18px cursive, sans-serif;
+    font-style: oblique;
+    display:flex;
+    background-image:url(Flowers/3.png) ;
+    width:195px;
+    height: 185px;
+    padding: -2px;
+    box-shadow: 4px 7px 5px;
+}
+a.listbuttonsE{
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+    width: auto;  
+    padding:5px 10px 5px 10px;
+    font: 18px cursive, sans-serif;
+    font-style: oblique;
+    display:flex;
+    background-image:url(Flowers/4.png) ;
+    width:195px;
+    height: 180px;
+    padding: -2px;
+    box-shadow: 4px 7px 5px;
+}
+a.listbuttonsF{
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+    width: auto;  
+    padding:5px 10px 5px 10px;
+    font: 18px cursive, sans-serif;
+    font-style: oblique;
+    display:flex;
+    background-image:url(Flowers/5.png) ;
+    width:195px;
+    height: 185px;
+    box-shadow: 4px 7px 5px;
+    padding: -2px;
+  
+}
+.libuttons{
+    display: inline-block;
+    
+}
+    </style>
+</head>
+<body>
+
+<!------>
+
+    <div class="container rounded">
+
+      <!---HEADER--->
+ 
+          <nav class="navbar navbar-expand-md navbar-dark bg-dark rounded">
+            
+            <a href="#" class="navbar-brand  name text-danger">Flower4U</a>
+            
+              <img height="90px" width="90px" src="Flowers/logo.png">
+              
+              
+              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse" >
+              
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown ">
+                  <a class="nav-link dropdown-toggle text-success" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Products
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item  text-primary" href="#">Bouquets</a>
+                    <a class="dropdown-item text-warning" href="#">Bridal Bouquets</a>
+                    <a class="dropdown-item text-danger" href="#">Flower Crowns </a>
+                    <a class="dropdown-item text-secondary" href="#">Flowers Wreath</a>
+                    <a class="dropdown-item text-info" href="#">Vase</a>
+                  </div>
+                </li>
+                <li class="nav-item  ">
+                  <a class="nav-link text-success" href="#" >About Us <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-success" href="#">Register</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-success" href="#">My Account</a>
+                </li> 
+                <li class="nav-item">
+                  <div class="cart">
+                  <nav class="navbar navbar-dark bg-dark">
+                    <button class="btn btn-outline-success " type="button"><h4 class="font-weight-bolder">Cart <i class="fas fa-shopping-cart"></i></h4> </button>            
+                  </nav>
+                  </div>
+                </li> 
+                <li class="nav-item">
+                  <div class="telephon">
+                    <h4>Need heip?</h4>
+                    <i class="fas fa-phone-volume"></i>1-888-888-8888 
+                  </div>
+
+                </li>
+              </ul>
+
+            </div>
+
+
+ 
+          </nav>
+
+     <!---BODY--->
+     <div class="nameHeader">
+        <h1>About US</h1>
+      </div>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-sm">
+            <div class="businesstext text-center border border-1">
+                <div class="textcolor">Business Hours</div>
+                <div>Monday: 9:00 AM - 3:00 PM</div>
+                <div>Tuesday: 9:00 AM - 3:00 PM</div>
+                <div>Wednesday: 9:00 AM - 3:00 PM</div>
+                <div>Thursday: 9:00 AM - 3:00 PM</div>
+                <div>Friday: 9:00 AM - 3:00 PM</div>
+                <div>Saturday:Closed</div>
+                <div>Sunday:Closed</div>
+                
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="textRight ">
+                     
+                <ul>
+                    <li>100% Satiffction Guaranteed</li><br>
+                    <li>Your Satifiction is Our #1 Concern</li><br>
+                    <li>Personlized Care with Each Order</li><br>
+                    <li>Enjoy the convenience of Ordering</li><br>
+                    <li>Committed to Quality and Service</li>
+                </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <p class="ptext">
+            Welcome to TheFlowerShop.ca. We are a genuine, local 
+         Canadian flower delivery company that is proud to be recognized   as one of FTD's top 5 florists in Canada. Since opening 
+          our doors in 1996, our company has consistently provided prompt  and reliable flower delivery throughout all of Canada. 
+            We are very proud of our work and are pleased to offer a 100% guarantee on all of our flowers, plants, gourmet baskets  
+             and gifts. Choose to send flowers with us today and learn why we have become such a respected member of the Canadian floral community.
+        
+        </p>
+        <br>
+        <div class="nameHeader">
+                <h3>Our Products</h3>
+        </div>
+        <div class="container">
+                <div class="row ml-1 mr-1 mb-5">
+                  <div class="col-sm">
+                    <li class="libuttons" ><a class="listbuttonsB" href="#"><b>Bouquets</b></a></li>
+                  </div>
+                  <div class="col-sm ">
+                    <li class="libuttons " ><a class="listbuttonsC " href="#"><b>Flower Crowns</b></a></li>
+                  </div>
+                  <div class="col-sm">
+                    <li class="libuttons" ><a class="listbuttonsD" href="#"><b>Bridal Bouquets</b></a></li>
+                  </div>
+                  <div class="col-sm">
+                    <li class="libuttons" ><a class="listbuttonsE" href="#"><b>Flowers Wreath</b></a></li>
+                  </div>
+                  <div class="col-sm">
+                    <li class="libuttons" ><a class="listbuttonsF" href="#"><b>Vase</b></a></li>
+                  </div>
+                </div>
+        </div>    
+
+    
+     <!---FOOTER--->
+
+     <div class="card-footer bg-dark">
+        <a class="footerlinks" href="#">Home</a>
+        <a class="footerlinks" href="#">Products</a>
+        <a class="footerlinks" href="#">About Us</a>
+        <a class="footerlinks" href="#">Register</a>
+        <a class="footerlinks" href="#">My Account</a>
+        <a class="footerlinks" href="#">Cart</a>
+        <p class="small pt-4 text-info">&#169; Somayeh Karami, Digerman Leonid, Antoni Charles-Davis </p>
+      </div>
+    </div>      
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
