@@ -95,14 +95,14 @@ padding:0;
 
 .sort{
   margin-top:2%;
-  margin-left:3%;
+  margin-left:4%;
 }
 
 .photos{
   display:grid;
   grid: auto auto/ auto auto;
   margin: 30px;
-  border-bottom:double;
+ 
 }
 
 .bigPic img {
@@ -146,11 +146,21 @@ padding:0;
 .d-flex{
   margin-top: 20px;
 }
+#main{
+    border: 1px solid black;
+}
+#sort{
+    width:20%;
+}
+#copyright{
+    margin-left:5%;
+}
+
         </style>
 
     </head>
     <body>
-        <div class="container rounded">
+        <div id="main" class="container rounded">
             <div class="bs-example">
                 <nav class="navbar navbar-expand-md navbar-dark bg-dark rounded">
             
@@ -165,8 +175,8 @@ padding:0;
         
                     <div class="collapse navbar-collapse" id="navbarCollapse" >
                       
-                      <ul class="navbar-nav">
-                        <li class="nav-item dropdown ">
+                     
+                        <div class="nav-item dropdown ">
                           <a class="nav-link dropdown-toggle text-success" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Products
                           </a>
@@ -177,31 +187,15 @@ padding:0;
                             <a class="dropdown-item text-secondary" href="#">Flowers Wreath</a>
                             <a class="dropdown-item text-info" href="#">Vase</a>
                           </div>
-                        </li>
-                        <li class="nav-item  ">
+                        </div>
+                        
                           <a class="nav-link text-success" href="#" >About Us <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
                           <a class="nav-link text-success" href="#">Register</a>
-                        </li>
-                        <li class="nav-item">
                           <a class="nav-link text-success" href="#">My Account</a>
-                        </li> 
-                        <li class="nav-item">
-                          <div class="cart">
-                          <nav class="navbar navbar-dark bg-dark">
-                            <button class="btn btn-outline-success " type="button"><h4 class="font-weight-bolder">Cart <i class="fas fa-shopping-cart"></i></h4> </button>            
-                          </nav>
-                          </div>
-                        </li> 
-                        <li class="nav-item">
-                          <div class="telephon">
-                            <h4>Need heip?</h4>
-                            <i class="fas fa-phone-volume"></i>1-888-888-8888 
-                          </div>
-        
-                        </li>
-                      </ul>
+                          <a class="nav-link text-success" href="#">Cart</a>
+                          
+                        
+
         
                     </div>
         
@@ -244,7 +238,7 @@ padding:0;
                 
                 <div class="sort">
                     <p><strong>View:</strong></p>
-                    <select name="sort" id="sort">
+                    <select name="sort" id="sort" class="browser-default custom-select">
                         <option value="Select" selected>Select...</option>
                         <option value="Sort2" >New</option>
                         <option value="Sort1">Bestselling</option>
@@ -322,7 +316,7 @@ padding:0;
                         </div>
                         <div class="namePrice">
                             <div class="left">
-                                <h4>White-gray ceramic vase</h4>                      
+                                <h4>White-gray ceramic </h4>                      
                             </div>
                             <div class="right">
                                 <h4>
@@ -341,15 +335,15 @@ padding:0;
                 
 
             </div>
-            <footer>
-                <a class="footerlinks">Home</a>
-                <a class="footerlinks">About</a>
-                <a class="footerlinks">Products</a>
-                <a class="footerlinks">Cart</a>
-                <a class="footerlinks">My Account</a>
-                <a class="footerlinks">Register</a>
+            <div class="card-footer bg-dark">
+                <a class="footerlinks" href="#">Home</a>
+                <a class="footerlinks" href="#">Products</a>
+                <a class="footerlinks" href="#">About Us</a>
+                <a class="footerlinks" href="#">Register</a>
+                <a class="footerlinks" href="#">My Account</a>
+                <a class="footerlinks" href="#">Cart</a>
                 <p class="small pt-4 text-info">&#169; Somayeh Karami, Digerman Leonid, Antoni Charles-Davis </p>
-            </footer>
+              </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
